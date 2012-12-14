@@ -44,8 +44,7 @@ at runtime from IRC.
 Currently implemented features (apart from the obvious or mentioned ones)
 
     Raffle mode (teams are raffled when the maximum amount of players are signed)
-    Pickup mode (both teams have captains, who pick their own players from the player 
-pool)
+    Pickup mode (both teams have captains, who pick their own players from the player pool)
     Voting of maps (maps can be added and removed via command)
     Tracking of user statistics (points and matches won/lost/draws)
     User ranking based on points
