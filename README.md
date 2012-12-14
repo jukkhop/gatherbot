@@ -5,7 +5,6 @@
 <br>
 <font face="Candara">   <h3>What is it?</h3>    </font>
 It's my attempt to make a simple and configurable IRC-bot that manages pickups/gather matches. It is written in perl programming language and uses the Bot::BasicBot module as a base. It's under active development as of November 2012. <br><br>
-
 Needed to run: <b>perl</b> + <b>Bot::BasicBot</b> (perl module) and its dependencies installed
 <br><br>
 
