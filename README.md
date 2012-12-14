@@ -42,6 +42,7 @@ out<br>
 votemap<br>
 captain<br>
 notcaptain<br>
+newcaptain<br>
 server (prints voice server info)<br>
 voip (prints voice server info)<br>
 pick<br>
