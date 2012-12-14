@@ -5,6 +5,7 @@ A simple and configurable IRC-bot for managing gathers/pickups
 
 
 What is it?
+=========
 It's my attempt to make a simple and configurable IRC-bot that manages pickups/gather 
 matches. It is written in perl programming language and uses the Bot::BasicBot module as 
 a base. It's under active development as of November 2012.
@@ -15,6 +16,7 @@ How to run
 TBA
 
 Background
+=========
 A friend of mine who's been involved in establishing the Finnish speaking community for 
 the recently released game Natural Selection 2, told me that they'd need an ircbot to 
 manage gather matches. I told him I would look into getting one.
@@ -28,6 +30,7 @@ while doing so. I used the Bot::BasicBot module as a base, which ment that I cou
 straight into coding the relevant stuff and skip all the underlying network stuff.
 
 How does it work?
+=========
 First aim was simple. There are only two different access levels a user can have and 
 it's either 'admin' or 'user'. No authentication is required for one to become a user, 
 and no explicit command is needed to add one as an user. You are simply added when you 
@@ -35,7 +38,7 @@ type your first command to the bot or otherwise storing your information is requ
 The bot uses visible irc nicks for storing userdata internally. No Q auth or anything is 
 needed. Both gamedata and userdata are stored in their own files as human understandable 
 text.
-
+<br><br>
 Another aim was configurable. Every relevant setting can be set from a .cfg file (before 
 running the script) or at runtime via a command. So basically the bot can be turned from 
 NS2 6v6 mode to CS 5v5 mode (or any other mode) with minimal effort and it can be done 
