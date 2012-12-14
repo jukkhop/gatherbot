@@ -1,6 +1,7 @@
 <font face="Cambria">
 
 <font face="Candara">   <h1>jukkan's gatherbot</h1>     </font>
+Contact irc: jukkan @ quakenet, mail: jukka.hopea@gmail.com
 <hr>
 <br>
 <font face="Candara">   <h3>What is it?</h3>    </font>
