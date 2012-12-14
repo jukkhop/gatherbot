@@ -81,7 +81,7 @@ sub connected {
     my $self = shift;
 
     # -IMPORTANT- In order to be admin, uncomment when running the 1st time
-    # -IMPORTANT- Comment again afterwards to preseverve your stats
+    # -IMPORTANT- Comment again afterwards to preserve your stats
     #
     # for my $name (@admins) {
     #     $users{$name} = "admin.$initialpoints.0.0.0";
