@@ -1,9 +1,3 @@
-gatherbot
-=========
-
-A simple and configurable IRC-bot for managing gathers/pickups
-
-
 What is it?
 =========
 It's my attempt to make a simple and configurable IRC-bot that manages pickups/gather 
