@@ -1,0 +1,637 @@
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "{tbadded} has signed up. {playercount}/{maxplayers} have signed up."
+msgstr "{tbadded} ilmoittautui peliin. Pelaajia on {playercount}/{maxplayers}."
+
+msgid "Sign-up is closed at the moment."
+msgstr "Ilmoittautuminen on tällä hetkellä kiinni."
+
+msgid "{who} is not an admin."
+msgstr "{who} ei ole admin."
+
+msgid "{who} has already signed up."
+msgstr "{who} on jo ilmoittautunut peliin."
+
+msgid "{tbadded}: Note! You can already vote for {votables}."
+msgstr "{tbadded}: Huom! Voit äänestää {votables} jo nyt."
+
+msgid "a map and a captain"
+msgstr "mappia ja kapteenia"
+
+msgid "a map"
+msgstr "mappia"
+
+msgid "a captain"
+msgstr "kapteenia"
+
+msgid "Votemap is about to begin. Vote with command .votemap <mapname>"
+msgstr "Aloitetaan mapin äänestys. Äänestä komennolla .votemap <mappi>"
+
+msgid "Votable maps: {maps}"
+msgstr "Äänestettävät mapit: {maps}"
+
+msgid "Votemap ends in {votemaptime} seconds!"
+msgstr "Äänestys päättyy {votemaptime} sekunnin kuluttua!"
+
+msgid "Command {command} is not enabled (gamehascaptains = 0)"
+msgstr "Komento {command} ei ole käytössä (gamehascaptains = 0)"
+
+msgid "Signing up as a captain is not possible at the moment."
+msgstr "Kapteeniksi ilmoittautuminen ei ole tällä hetkellä mahdollista."
+
+msgid "A captain must have over {initialpoints} points."
+msgstr "Kapteeniksi ilmoittautuvalla oltava yli {initialpoints} pistettä."
+
+msgid "{who} is already a captain."
+msgstr "{who} on jo kapteeni."
+
+msgid "{who} has not signed up."
+msgstr "{who} ei ole ilmoittautunut peliin."
+
+msgid "{who} is now a captain."
+msgstr "{who} on nyt kapteeni."
+
+msgid "{who} is not a captain."
+msgstr "{who} ei ole kapteeni."
+
+msgid "Player picking has already started (must use .rafflecaptain or .changecaptain)"
+msgstr "Pelaajien poiminta on jo alkanut (käytettävä .rafflecaptain tai .changecaptain)"
+
+msgid "{who} is not a captain anymore."
+msgstr "{who} ei enää ole kapteeni."
+
+msgid "Player picking has not started yet (use .uncaptain)"
+msgstr "Pelaajien poiminta ei ole vielä alkanut (käytä .uncaptain)"
+
+msgid "Player picking has not started yet."
+msgstr "Pelaajien poiminta ei ole vielä alkanut."
+
+msgid "Syntax is {command} <captains_name>"
+msgstr "Syntaksi on {command} <kapteenin_nimi>"
+
+msgid "Raffling of a new captain in place of {who} have requested: {requesters} [{requestersc}/{neededreq}"
+msgstr "Uuden kapteenin arvontaa {who}:n tilalle ovat ehdottaneet: {requesters} [{requestersc}/{neededreq}"
+
+msgid "There are no potential captains in the player pool. Rafflecaptain cannot be done."
+msgstr "Pelaajapoolissa ei ole ketään kapteeniksi kelpaavaa. Kapteenin arvontaa ei voida suorittaa."
+
+msgid "{newcaptain} is now a captain instead of {oldcaptain}"
+msgstr "{newcaptain} on nyt kapteeni {oldcaptain}:n sijasta"
+
+msgid "Syntax is {command} <current_captain> <new_captain>"
+msgstr "Syntaksi on {command} <nykyinen_kapteeni> <uusi_kapteeni>"
+
+msgid "{who} is not on the player list."
+msgstr "{who} ei ole pelaajalistalla."
+
+msgid "Syntax is {command} <playername>"
+msgstr "Syntaksi on {command} <pelaaja>"
+
+msgid "It's not {who}'s turn to pick."
+msgstr "Ei ole {who}:n vuoro poimia."
+
+msgid "{picker} picked {who}."
+msgstr "{picker} poimi {who}:n."
+
+msgid "{next}'s turn to pick."
+msgstr "{next}:n vuoro poimia."
+
+msgid "Players: {list}"
+msgstr "Pelaajat: {list}"
+
+msgid "One player remained in the pool; {player} was automatically moved to {next}'s team."
+msgstr "Jäljelle jäi 1 pelaaja; {player} siirrettiin automaattisesti {next}:n joukkueeseen."
+
+msgid "No one has signed up."
+msgstr "Ei ilmoittautuneita."
+
+msgid "The starting of the game has been aborted; sign-up list has been cleared."
+msgstr "Peli aloitus keskeytetty; ilmoittautuneiden lista tyhjennetty."
+
+msgid "Players: {list} ({pcount}/{pmax})"
+msgstr "Pelaajat: {list} ({pcount}/{pmax})"
+
+msgid "Player pool: {list}"
+msgstr "Pelaajapooli: {list}"
+
+msgid "Syntax is {command} <gameno> <{team1}|{team2}|{draw}>"
+msgstr "Syntaksi on {command} <pelinro> <{team1}|{team2}|{draw}>"
+
+msgid "Score must be {team1}, {team2} or {draw}"
+msgstr "Tulokseksi annettava {team1}, {team2} tai {draw}"
+
+msgid "Game #{no} was not found."
+msgstr "Peliä #{no} ei löydy."
+
+msgid "Game #{no} is already reported."
+msgstr "Peli #{no} on jo reportoitu."
+
+msgid "{team}'s captain requested score {score} for game #{no}"
+msgstr "{team}:n kapteeni ehdotti pelille #{no} tulosta {score}"
+
+msgid "{who} didn't play in game #{no}."
+msgstr "{who} ei pelannut pelissä #{no}."
+
+msgid "Score {score} for game #{no} have requested: {requesters} [{requestersc}/{neededreq}"
+msgstr "Tulosta {score} pelille #{no} on ehdottanut: {requesters} [{requestersc}/{neededreq}"
+
+msgid "Game #{no} has ended:"
+msgstr "Peli $cmd1 on päättynyt:"
+
+msgid "Result: "
+msgstr "Tulos: "
+
+msgid "won"
+msgstr "voitti"
+
+msgid "Point changes: {line}"
+msgstr "Pistemuutokset: {line}"
+
+msgid "Signing out is not possible at the moment."
+msgstr "Poistuminen ei ole mahdollista tällä hetkellä."
+
+msgid "A captain can't sign out (must use .uncaptain first)"
+msgstr "Kapteeni ei voi poistua (käytettävä .uncaptain ensin)"
+
+msgid "Removing {who} from the sign-up have requested: {requesters} [{requestersc}/{neededreq}"
+msgstr "{who}:n poistamista on pyytänyt: {requesters} [{requestersc}/{neededreq}"
+
+msgid "{who} signed out. {pcount}/{pmax} have signed up."
+msgstr "{who} poistui pelistä. Pelaajia on {pcount}/{pmax}."
+
+msgid "User {who} was not found."
+msgstr "Käyttäjää {who} ei löydy."
+
+msgid "{who} has {p} points, {w} wins, {l} losses and {d} draws"
+msgstr "{who}:lla on {p} pistettä, {w} voittoa, {l} häviötä ja {d} tasapeliä"
+
+msgid "Syntax is {no} <gameno>"
+msgstr "Syntaksi on {no} <pelinro>"
+
+msgid "Game"
+msgstr "Peli"
+
+msgid "Status"
+msgstr "Tila"
+
+msgid "active"
+msgstr "käynnissä"
+
+msgid "Votable players are: {players}"
+msgstr "Äänestettävissä olevat pelaajat: {players}"
+
+msgid "A given vote can be removed by giving a dot as the name. Given votes can be viewed with command {command} votes"
+msgstr "Annetun äänen voi vetää pois antamalla pelaajaksi pisteen. Äänestystilanteen näkee komennolla {command} votes"
+
+msgid "Voting of captain is not possible at the moment."
+msgstr "Kapteenin äänestys ei ole tällä hetkellä mahdollista."
+
+msgid "No captainvotes yet."
+msgstr "Ei yhtään captainvotea vielä."
+
+msgid "Captainvotes: "
+msgstr "Captainvotet: "
+
+msgid "One must be signed up to be able to vote for a captain."
+msgstr "Voidakseen äänestää kapteenia, täytyy olla ilmoittautunut peliin."
+
+msgid "Invalid player name given. Votable players are: {players}"
+msgstr "Virheellinen pelaajan nimi. Äänestettävissä olevat pelaajat: {players}"
+
+msgid "{who} hasn't voted for a captain yet."
+msgstr "{who} ei ole äänestänyt kapteeniksi vielä ketään."
+
+msgid "{who} has already voted for {vote} as a captain."
+msgstr "{who} on jo äänestänyt pelaajaa {vote} kapteeniksi."
+
+msgid "Syntax is {command} <mapname>"
+msgstr "Syntaksi on {command} <mappi>"
+
+msgid "Votable maps are: {maps}"
+msgstr "Äänestettävissä olevat mapit: {maps}"
+
+msgid "A given vote can be removed by giving a dot as the map. Given votes can be viewed with command {command} votes"
+msgstr "Annetun äänen voi vetää pois antamalla mapiksi pisteen. Äänestystilanteen näkee komennolla {command} votes"
+
+msgid "Voting of map is not possible at the moment."
+msgstr "Mapin äänestys ei ole tällä hetkellä mahdollista."
+
+msgid "No mapvotes yet."
+msgstr "Ei yhtään mapvotea vielä."
+
+msgid "Mapvotes: "
+msgstr "Mappivotet: "
+
+msgid "One must be signed up to be able to vote for a map."
+msgstr "Voidakseen äänestää mappia, täytyy olla ilmoittautunut peliin."
+
+msgid "Invalid map. Votable maps are: {maps}"
+msgstr "Virheellinen mappi. Äänestettävissä olevat mapit: {maps}"
+
+msgid "{who} hasn't voted for a map yet."
+msgstr "{who} ei ole äänestänyt vielä mitään mappia."
+
+msgid "{who} has already voted for {vote} as a map."
+msgstr "{who} on jo äänestänyt mappia {vote}."
+
+msgid "Syntax is:"
+msgstr "Syntaksi on:"
+
+msgid "To a game about to begin: {command} <to-be-replaced> <replacement>"
+msgstr "Alkavalle pelille: {command} <korvattava> <korvaava>"
+
+msgid "To a game that already started: {command} <gameno> <to-be-replaced> <replacement>"
+msgstr "Alkaneelle pelille: {command} <pelinro> <korvattava> <korvaava>"
+
+msgid "Syntax is {command} <to-be-replaced> <replacement>"
+msgstr "Syntaksi on {command} <korvattava> <korvaava>"
+
+msgid "A captain cannot be replaced."
+msgstr "Kapteenia ei ole mahdollista korvata."
+
+msgid "Replaced {rem} with player {rep}."
+msgstr "{rem} korvattu pelaajalla {rep}."
+
+msgid "Replacing {rem} with {rep} have requested: {requesters} [{requestersc}/{neededreq}"
+msgstr "{rem}:n korvaamista {rep}:lla on pyytänyt: {requesters} [{requestersc}/{neededreq}"
+
+msgid "Only an admin can make a replace to a game that already started."
+msgstr "Vain admin voi korvata pelaajan pelissä, joka on jo alkanut."
+
+msgid "Game #{no} has already ended."
+msgstr "Peli #{no} on jo päättynyt."
+
+msgid "Replaced {rem} with player {rep} (in game #{no})"
+msgstr "{rem} korvattu pelaajalla {rep} (pelissä #{no})"
+
+msgid "Player {rem} was not found (from game #{no})"
+msgstr "Pelaajaa {rem} ei löytynyt (pelistä #{no})"
+
+msgid "{who} is already on the player list (in game #{no})"
+msgstr "{who} on jo pelaajalistalla (pelissä #{no})"
+
+msgid "No ongoing games."
+msgstr "Ei yhtään peliä käynnissä."
+
+msgid "Ongoing games: {games}"
+msgstr "Käynnissä olevat pelit: {games}"
+
+msgid "Syntax is {command} <username> <admin|user>"
+msgstr "Syntaksi on {command} <käyttäjä> <admin|user>"
+
+msgid "{who} is now an {accesslevel}."
+msgstr "{who} on nyt {accesslevel}."
+
+msgid "{who} is already an {accesslevel}."
+msgstr "{who} on jo {accesslevel}."
+
+msgid "{who} is not an original admin."
+msgstr "{who} ei ole alkuperäinen admin."
+
+msgid "Syntax is {command} <username>"
+msgstr "Syntaksi on {command} <käyttäjänimi>"
+
+msgid "{who}'s stats have been reseted."
+msgstr "{who}:n tilastot nollattu."
+
+msgid "Syntax is {command} <gameno>"
+msgstr "Syntaksi on {command} <pelinro>"
+
+msgid "Game #{no} is still active."
+msgstr "Peli #{no} on vielä käynnissä."
+
+msgid "Game #{no} voided."
+msgstr "Peli #{no} mitätöity."
+
+msgid "Syntax is {command} <current_name> <new_name>"
+msgstr "Syntaksi on {command} <nykyinennimi> <uusinimi>"
+
+msgid "A user named {who} already exists."
+msgstr "{who} niminen käyttäjä on jo olemassa."
+
+msgid "{old} is now renamed to {new}"
+msgstr "{old}:n nimi vaihdettu {new}:ksi."
+
+msgid "{command} combines the stats of two users and deletes the other account."
+msgstr "{command} yhdistää kahden käyttäjätilin tiedot yhteen käyttäjätiliin."
+
+msgid "Syntax is {command} <remaining_user> <user_to-be-removed>"
+msgstr "Syntaksi on {command} <jäävä_käyttäjänimi> <poistettava_käyttäjänimi>"
+
+msgid "The stats of {rem} and {del} are now combined. User {del} deleted."
+msgstr "Käyttäjien {rem} ja {del} tiedot yhdistetty. Käyttäjänimi {del} poistettu."
+
+msgid "{who} is ranked {rank} with points {points}"
+msgstr "{who}:n sijoitus on {rank} pisteillä {points}"
+
+msgid "{who} is not ranked yet."
+msgstr "{who}:lla ei ole vielä sijoitusta."
+
+msgid "There are no ranked users."
+msgstr "Sijoituslista on tyhjä."
+
+msgid  "           = Signs you up for the game."
+msgstr "           = Lisää sinut ilmoittautuneiden listalle."
+
+msgid  "          = Shows you list of signed up players."
+msgstr "          = Lisää sinut pelaajapooliin."
+
+msgid  "           = Signs you out from the game. In addition, you can request an another player to be removed."
+msgstr "           = Poistaa sinut pelaajapoolista. Lisäksi voit ehdottaa jotain toista pelaajaa poistettavaksi."
+
+msgid  "       = Syntax is .votemap <mapname>. More info with .votemap"
+msgstr "       = Syntaksi on .votemap <mapinnimi>. Lisätietoa komennolla .votemap"
+
+msgid  "   = Syntax is .votecaptain <playername>. More info with .votecaptain"
+msgstr "   = Syntaksi on .votecaptain <pelaaja>. Lisätietoa komennolla .votecaptain"
+
+msgid  "       = Makes you a captain. Command is only available if there is a free captain slot."
+msgstr "       = Tekee sinusta pelin kapteenin. Käytettävissä ainoastaan, jos kapteenin paikka on vielä vapaa."
+
+msgid  "     = Frees the captain slot from you, supposing that you are a captain and player picking hasn't started"
+msgstr "     = Vapauttaa kapteenin paikan sinulta. Edellyttää, että olet kapteeni ja että pelaajien poiminta ei ole alkanut"
+
+msgid  " = Requests the raffling of a new captain to replace a current captain. Available after the picking of players has started. More info with .rafflecaptain"
+msgstr " = Ehdottaa uuden kapteenin arvontaa nykyisen tilalle. Edellytyksenä, että pelaajien poiminta on meneillään. Lisätietoa komennolla .rafflecaptain"
+
+msgid  "        = Prints the game server info."
+msgstr "        = Tulostaa peliserverin tiedot."
+
+msgid  "        = Prints the mumble server info."
+msgstr "        = Tulostaa mumbleserverin tiedot."
+
+msgid  "          = Captain's command to pick a player into his team."
+msgstr "          = Kapteenin komento, jolla poimii pelaajan joukkueeseensa."
+
+msgid  "        = You can request a score for a game with this command. More info with .report"
+msgstr "        = Komennolla voit ehdottaa pelin tulosta. Lisätietoa komennolla .report"
+
+msgid  "         = Prints your stats (or someone else's stats with .stats <playername>)"
+msgstr "         = Tulostaa tilastosi. Jonkun toisen tilastot saa komennolla .stats <pelaaja>"
+
+msgid  "      = Prints the info on the last game that was started."
+msgstr "      = Tulostaa viimeisimmän pelin tiedot"
+
+msgid  "      = Syntax is .gameinfo <gameno>. Prints the info of the given game."
+msgstr "      = Syntaksi on .gameinfo <pelinro>. Tulostaa annetun pelin tiedot"
+
+msgid  "       = You can request a player to be replaced with another player with this command. More info with .replace"
+msgstr "       = Komennolla voit ehdottaa jotain pelaajaa korvattavaksi jollain toisella pelaajalla. Lisätietoa komennolla .replace"
+
+msgid  "         = Prints a list of the games that are active."
+msgstr "         = Tulostaa käynnissä olevien pelien pelinumerot."
+
+msgid  "          = Prints your ranking (or someone else's with .rank playername)"
+msgstr "          = Tulostaa sinulle sijoituksesi. Jonkun toisen sijoituksen saa komennolla .rank <pelaaja>"
+
+msgid  "           = Prints a list of top ranked players. You can define the length of the list with .top <length>"
+msgstr "           = Tulostaa listan parhaiten sijoittuneista pelaajista. Listan pituuden voi itse määrittää komennolla .top <lkm>"
+
+msgid  "        = Puts you into hilight-ignore, (you're no longer hilighted on command .hilight)"
+msgstr "        = Asettaa sinut hilight-ignoreen, jolloin sinua ei highlightata komennolla .hilight."
+
+msgid  "         = Removes you from the hilight-ignore (you can again be hilighted on command .hilight)"
+msgstr "         = Poistaa sinut hilight-ignoresta, jolloin sinua jälleen highlightataan komennolla .hilight."
+
+msgid  "         = Prints your (or someone else's) username and accesslevel."
+msgstr "         = Tulostaa omasi (tai jonkun toisen) käyttäjänimen ja käyttöoikeustason."
+
+msgid  " = (Admins only) Gives a list of commands available to admins as a private message."
+msgstr " = (Vain admineille) Antaa listan vain admineille käytettävissä olevista komennoista yksityisviestinä."
+
+msgid "Commands are "
+msgstr "Komennot ovat "
+
+msgid "To get descriptions for the commands, use {command} verbose"
+msgstr "Komentojen tarkemmat selitteet saa komennolla {command} verbose"
+
+msgid  "            = Signs a player up for the game. Syntax is .add <playername>"
+msgstr "            = Ilmoittaa pelaajan peliin. Syntaksi on .add <pelaaja>"
+
+msgid  "            = Signs a player out from the game. Syntax is .out <playername>"
+msgstr "            = Poistaa pelaajan ilmoittautumisen. Syntaksi on .out <pelaaja>"
+
+msgid  "          = Aborts the sign-up and clears the player list."
+msgstr "          = Nollaa ilmoittautumistilanteen, eli tyhjentää pelaajalistan."
+
+msgid  "        = You can make someone a captain with this command, supposing that there's a free captain slot and that the player is signed up."
+msgstr "        = Komennolla voi tehdä pelaajasta kapteenin, edellyttäen että kapteenin paikka on vapaana ja pelaaja on ilmoittautunut peliin."
+
+msgid  "      = Frees a captain slot from someone. Syntax is .uncaptain <captains_name>. After the picking has started, use .changecaptain or rafflecaptain."
+msgstr "      = Vapauttaa kapteenin paikan. Syntaksi on .uncaptain <kapteenin_nimi>. Ilmoittautumisen alettua, käytä .changecaptain tai rafflecaptain."
+
+msgid  "  = You can change the captain with this command under any circumstances. Syntax is .changecaptain <curr_captain> <new_captain>."
+msgstr "  = Komennolla voi vaihtaa kapteenin. Syntaksi on .changecaptain <nyk_kapteeni> <uus_kapteeni>."
+
+msgid  "  = You can request the raffling of a new captain to replace a current captain, supposing that picking has started. Syntax is .rafflecaptain <captains_name>."
+msgstr "  = Komennolla voit (pelaajien poiminnan alettua) ehdottaa uuden kapteenin arvontaa nykyisen tilalle. Syntaksi on .rafflecaptain <kapteenin_nimi>."
+
+msgid  "        = Replaces a player in the signup or in a game that already started. More info on .replace"
+msgstr "        = Korvaa poolissa olevan pelaajan toisella pelaajalla. Lisätietoa komennolla .replace"
+
+msgid  "            = Sends a private irc-notice to everyone on the channel about the status of the signup."
+msgstr "            = Komennolla botti lähettää jokaiselle kanavalla olevalle irc-noticen ilmottautumistilanteesta."
+
+msgid  "        = Highlights everyone on the channel at once."
+msgstr "        = Komennolla botti highlightaa jokaista kanavalla olevaa yhdellä kertaa."
+
+msgid  "         = Sets the score of a game. Syntax is .report <gameno> <{team1}|{team2}|{draw}>"
+msgstr "         = Asettaa pelin tuloksen. Syntaksi on .report <pelinro> <{team1}|{team2}|{draw}>"
+
+msgid  "       = Voids a game as if it was never played. Syntax is .voidgame <gameno>"
+msgstr "       = Mitätöi pelin sekä sen tuloksen vaikutukset. Syntaksi on .voidgame <pelinro>"
+
+msgid  "    = Sets the given user's accesslevel to the given level. Syntax is .accesslevel <username> <admin|user>"
+msgstr "    = Asettaa annetun käyttäjän käyttöoikeudet annetulle tasolle. Syntaksi on .accesslevel <käyttäjä> <admin|user>"
+
+msgid  "     = Changes the given user's username. Syntax is .changename <current_name> <new_name>"
+msgstr "     = Muuttaa annetun käyttäjän nimen. Syntaksi on .changename <nykyinen_nimi> <uusi_nimi>"
+
+msgid  "   = Combines the stats of two players and deletes the other user. Syntax is .combineusers <user-to-remain> <user-to-be-deleted>"
+msgstr "   = Yhdistää kahden käyttäjän tilastot. Syntaksi on .combineusers <jäävä_käyttäjä> <poistettava_käyttäjä>"
+
+msgid  "     = Resets the given user's stats. Syntax is .resetstats <username>"
+msgstr "     = Resetoi annetun käyttäjän tilastot. Syntaksi on .resetstats <käyttäjä>"
+
+msgid  "            = Sets the value of the given variable or prints its current value if a value is not given. Syntax is .set <variable> <value>. More info on .set"
+msgstr "            = Muuttaa annetun muuttujan arvon tai tulostaa sen nykyisen arvon jos arvoa ole annettu. Syntaksi on .set <muuttuja> <arvo>. Lisätietoa komennolla .set"
+
+msgid  "         = Adds a map into the map pool."
+msgstr "         = Lisää annetun kartan karttavalikoimaan."
+
+msgid  "      = Removes a map from the map pool."
+msgstr "      = Poistaa annetun kartan karttavalikoimasta."
+
+msgid  "       = (Original admins only) Saves all data and shuts the bot down."
+msgstr "       = (Vain alkup. adminit) Tallentaa tallennettavan datan ja sammuttaa botin."
+
+msgid "\"{map}\" added to the map pool."
+msgstr "\"{map}\" lisätty karttavalikoimaan."
+
+msgid "Map \"{map}\" is already in the map pool."
+msgstr "Mappi \"{map}\" on jo karttavalikoimassa."
+
+msgid "\"{map}\" removed from the map pool."
+msgstr "\"{map}\" poistettu karttavalikoimasta."
+
+msgid "Syntax is {command} <variable> <value>"
+msgstr "Syntaksi on {command} <muuttuja> <arvo>"
+
+msgid "Use {command} list to get a list of the variables"
+msgstr "Listan muuttujista saa komennolla {command} list"
+
+msgid "Variables: "
+msgstr "Muuttujat: "
+
+msgid "Invalid variable name."
+msgstr "Virheellinen muuttujan nimi."
+
+msgid "Variable {var} is now set to {val}."
+msgstr "Muuttuja {var} asetettu arvoon {val}."
+
+msgid "Invalid value given for variable {var}."
+msgstr "Virheellinen arvo annettu muuttujalle {var}."
+
+msgid "{chan} - sign up for gather is on! {pcount}/{pmax} players have signed up."
+msgstr "{chan} - gatheriin ilmoittautuminen käynnissä! Pelaajia on {pcount}/{pmax}"
+
+msgid "{who} has already requested highlight."
+msgstr "{who} on jo pyytänyt hilightia."
+
+msgid "Highlight have requested: {requesters} [{requestersc}/{neededreq}]"
+msgstr "Highlightia ovat pyytäneet: {requesters} [{requestersc}/{neededreq}]"
+
+msgid "Syntax is {command} <off|on>"
+msgstr "Syntaksi on {command} <off|on>"
+
+msgid "{who} was already in hilight-ignore."
+msgstr "{who} oli jo hilight-ignoressa."
+
+msgid "{who} is now in hilight-ignore."
+msgstr "{who} on nyt hilight-ignoressa."
+
+msgid "{who} was not in hilight-ignore."
+msgstr "{who} ei ollut hilight-ignoressa."
+
+msgid "{who} is no longer in hilight-ignore."
+msgstr "{who} ei enää ole hilight-ignoressa."
+
+msgid "There are no captains currently."
+msgstr "Ei kapteeneita tällä hetkellä."
+
+msgid "The captains are: {captains}"
+msgstr "Kapteeneita ovat: {captains}"
+
+msgid "The teams are empty."
+msgstr "Joukkueet ovat tyhjät."
+
+msgid "No Q-auth info for user {who}"
+msgstr "Ei Q-auth tietoja käyttäjälle {who}"
+
+msgid "{who} is authed to Q on account {acc}"
+msgstr "{who} on authannut Q:lle tunnuksella {acc}"
+
+msgid "Wrong syntax."
+msgstr "Väärä syntaksi."
+
+msgid "Data saved."
+msgstr "Data tallennettu."
+
+msgid "Map voting has ended."
+msgstr "Mapin äänestys on päättynyt."
+
+msgid " The winner of votemap is {map}."
+msgstr " Äänestyksen voitti {map}."
+
+msgid "Received less than {neededvotes} votes. The map will be selected randomly."
+msgstr "Ääniä tuli alle {neededvotes} kappaletta. Mappi valitaan satunnaisesti."
+
+msgid "Voting of captains is about to begin. Vote with command .votecaptain <playername>"
+msgstr "Aloitetaan kapteenien äänestys. Äänestä komennolla .votecaptain <pelaaja>"
+
+msgid "The other captain is {capt}. Voting of the other captain is about to begin."
+msgstr "Toinen kapteeni on {capt}. Aloitetaan toisen kapteenin äänestys."
+
+msgid "Vote with command .votecaptain <playername>"
+msgstr "Äänestä komennolla .votecaptain <pelaaja>"
+
+msgid "Voting ends in {secs} seconds!"
+msgstr "Äänestys päättyy {secs} sekunnin kuluttua!"
+
+msgid "Voting of captains has ended."
+msgstr "Kapteenien äänestys on päättynyt."
+
+msgid "Voting of a captain has ended."
+msgstr "Kapteenin äänestys on päättynyt."
+
+msgid "Voting was one-sided; The second captain will be randomly selected."
+msgstr "Äänestys oli yksipuolinen; Toinen kapteeni valitaan satunnaisesti."
+
+msgid "The captains"
+msgstr "Kapteenit"
+
+msgid "The other captain"
+msgstr "Toinen kapteeni"
+
+msgid "Received less than {neededvotes} votes. {str} will be selected randomly."
+msgstr "Ääniä tuli alle {neededvotes} kappaletta. {str} valitaan satunnaisesti."
+
+msgid "Points have been recalculated."
+msgstr "Pelaajien pisteet laskettu uudelleen."
+
+msgid "{capt1} and {capt2} are the captains."
+msgstr "{capt1} ja {capt2} ovat kapteeneita."
+
+msgid "The picking of players is about to start."
+msgstr "Aloitetaan pelaajien poiminta."
+
+msgid "Game {no} begins!"
+msgstr "Peli {no} alkaa!"
+
+msgid "Available colors are: "
+msgstr "Saatavilla olevat värit: "
+
+msgid "Gameserver: "
+msgstr "Peliserveri: "
+
+msgid "Password: "
+msgstr "Salasana: "
+
+msgid "{who} was identified as user {old} via Q-auth; username changed to {who}"
+msgstr "{who} tunnistettu Q-authin perusteella käyttäjäksi {old}; käyttäjänimi vaihdettu {who}:ksi."
+
+msgid "Players:"
+msgstr "Pelaajat:"
+
+msgid "Ongoing games:"
+msgstr "Meneillään olevat pelit:"
+
+msgid "Answer from web-server: {ans}"
+msgstr "Vastaus web-palvelimelta: {ans}"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
