@@ -1346,8 +1346,8 @@ sub said {
         } else { # command was .gameinfo or .gi
         
             if ($#commands != 1) {
-                $self->sayc(__x("Syntax is {no} <gameno>",
-                                no => $commands[0]));
+                $self->sayc(__x("Syntax is {gno} <gameno>",
+                                gno => $commands[0]));
                 return;
             }
             
@@ -1355,8 +1355,8 @@ sub said {
         }
         
         if (! exists $games{$query}) {
-            $self->sayc(__x("Game #{no} was not found.",
-                            no => $query));
+            $self->sayc(__x("Game #{gno} was not found.",
+                            gno => $query));
             return;
         }
         
@@ -5319,7 +5319,7 @@ sub get_timezone {
         return 'Europe/Helsinki';
     }
     
-    return '';
+    return 'UTC';
 }
 
 sub set_locale {
@@ -5568,16 +5568,11 @@ sub senddata {
                 push(@jsons, '{"pk": ' . $player_pk . ', "model": "gathers.player", "fields": {"points": ' . $userdata[1] .
                              ', "wins": ' . $userdata[2] . ', "losses": ' . $userdata[3] . ', "draws": ' . $userdata[4] .
                              ', "accesslevel": "' . $userdata[0] . '", "name": "' . $player . '"}}');
-                                
-                # Add to %game_player_pks, if necessary
-                if (! exists $game_player_pks{$gameno . $player}) {
-                    my $pk = gethighest_pk('game_player');
-                    $game_player_pks{$gameno . $player} = $pk + 1;
-                }
                 
                 # Get game_player primary key
-                my $gp_pk = $game_player_pks{$gameno . $player};
+                my $gp_pk = gethighest_pk('game_player');
                 $gp_pk += 1;
+                $game_player_pks{$gameno . $player} = $gp_pk;
                 
                 my $pointsdelta = $pdeltas[$i];
                 my $pointsbefore = $pbefore[$i];
@@ -5599,7 +5594,7 @@ sub senddata {
                 # - ADD GAME_PLAYER ENTRY TO THE DATA -
                 push(@jsons, '{"pk": ' . $gp_pk . ', "model": "gathers.game_player", "fields": {"pointsdelta": ' . $pointsdelta .
                              ', "pointsbefore": ' . $pointsbefore . ', "player": ' . $player_pk . ', "game": ' . $gameno . 
-                             ', "team": ' . $team , ', "captain": ' . $captain . '}}');
+                             ', "team": ' . $team . ', "captain": ' . $captain . '}}');
             }
         }
     }
@@ -5612,10 +5607,10 @@ sub senddata {
     my $json = '[' . join(', ', @jsons) . ']';
     
     # Print jsons
-    #print STDERR "JSONS: \n";
-    #for my $str (@jsons) {
-    #    print STDERR "$str \n";
-    #}
+    print STDERR "JSONS: \n";
+    for my $str (@jsons) {
+        print STDERR "$str \n";
+    }
     
     my $req = HTTP::Request->new( 'POST', $websiteurl );
     $req->header( 'Content-Type' => 'application/json' );
