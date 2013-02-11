@@ -5592,7 +5592,7 @@ sub senddata {
                 
                 # Find out if captain
                 my $captain = 'false';
-                if ($i == 0 && $i == $wasteamsize) {
+                if ($i == 0 || $i == $wasteamsize) {
                     $captain = 'true';
                 }
                 
