@@ -9,7 +9,8 @@ Contact irc: jukkan @ quakenet, mail: jukka.hopea@gmail.com
 <p>My attempt to make a configurable IRC-bot that manages pickups/gather matches. It's written in perl programming language and uses the Bot::BasicBot module as a base library. It's under active development as of February 2013.<p>
 
 <font face="Candara"><h3>Needed to run</h3></font>
-perl, perl modules Bot::BasicBot and DateTime (at least) -to be complemented later-
+perl
+perl modules: Bot::BasicBot, DateTime (at least, to be complemented later) 
 
 <font face="Candara"><h3>About the bot</h3></font>
 <p>Initially made for NS2 Finland community, the bot has now gained more widespread usage. Over 100 gathers have been played on it during the 3 month period it's been in development.</p>
