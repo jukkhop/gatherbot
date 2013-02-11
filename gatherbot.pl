@@ -758,7 +758,7 @@ sub said {
         }
         
         if ($maxplayers - $pickedplayercount > 1 || $remainingplayercount > 1) {
-            $outline .= __x("{next}'s turn to pick.",
+            $outline .= " " . __x("{next}'s turn to pick.",
                             next => $nextpicker);
 
             $giveplayerlist = 1;
