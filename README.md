@@ -13,7 +13,7 @@ perl<br>
 perl modules: Bot::BasicBot, DateTime (at least, to be complemented later)
 
 <font face="Candara"><h3>About the bot</h3></font>
-<p>Initially made for NS2 Finland community, the bot has now gained more widespread usage. Over 100 gathers have been played on it during the 3 month period it's been in development.</p>
+<p>Initially made for the NS2 Finland community, the bot is now gaining more widespread usage. Over 100 gathers have been played on it during the 3 month period it's been in development.</p>
 <p>The bot's messages are now localized, English and Finnish are available. The language can be changed easily at run-time.</p>
 <p>If you're interested to run this bot on your channel and want advice/help, drop me a message (contact info is at the top).</p>
 
