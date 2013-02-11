@@ -1505,7 +1505,8 @@ sub said {
         my $players = join ' ', @votableplayers;
         
         if ($#commands < 1) {
-            $self->sayc(__x("Syntax is {command} <playername>"));
+            $self->sayc(__x("Syntax is {command} <playername>",
+                            command => $commands[0]));
             
             $self->sayc(__x("Votable players are: {players}",
                             players => $players));
