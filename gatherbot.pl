@@ -862,8 +862,8 @@ sub said {
             if ($canpick == 0) {
                 $outline = __x("Players: {list} ({pcount}/{pmax})",
                                list => $list,
-                               pcount => "\x02" . $playercount . "x0f",
-                               pmax =>   "\x02" . $maxplayers  . "x0f");
+                               pcount => "\x02" . $playercount . "\x0f",
+                               pmax =>   "\x02" . $maxplayers  . "\x0f");
                 
             } else {
                 $outline = __x("Player pool: {list}",
