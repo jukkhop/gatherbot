@@ -2,13 +2,13 @@
 
 <font face="Candara"><h1>gatherbot by jukkan</h1></font>
 Contact irc: jukkan @ quakenet, mail: jukka.hopea@gmail.com
-<hr>
-<font face="Candara"><h3>What is it?</h3></font>
-My attempt to make a configurable IRC-bot that manages pickups/gather 
-matches. It's written in perl programming language and uses the Bot::BasicBot module as 
-a base library. It's under active development as of February 2013.
 
-<font face="Candara"><h3Needed to run</h3></font>
+<hr>
+
+<font face="Candara"><h3>What is it?</h3></font>
+<p>My attempt to make a configurable IRC-bot that manages pickups/gather matches. It's written in perl programming language and uses the Bot::BasicBot module as a base library. It's under active development as of February 2013.<p>
+
+<font face="Candara"><h3>Needed to run</h3></font>
 perl, perl modules Bot::BasicBot and DateTime (at least) -to be complemented later-
 
 <font face="Candara"><h3>About the bot</h3></font>
