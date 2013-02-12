@@ -774,7 +774,7 @@ sub said {
         }
         
         if ($maxplayers - $pickedplayercount > 1 || $remainingplayercount > 1) {
-            $outline .= __x("{next}'s turn to pick.",
+            $outline .= __x(" " . "{next}'s turn to pick.",
                             next => $nextpicker);
 
             $giveplayerlist = 1;
@@ -878,8 +878,8 @@ sub said {
             if ($canpick == 0) {
                 $outline = __x("Players: {list} ({pcount}/{pmax})",
                                list => $list,
-                               pcount => "\x02" . $playercount . "x0f",
-                               pmax =>   "\x02" . $maxplayers  . "x0f");
+                               pcount => "\x02" . $playercount . "\x0f",
+                               pmax =>   "\x02" . $maxplayers  . "\x0f");
                 
             } else {
                 $outline = __x("Player pool: {list}",
@@ -1521,7 +1521,8 @@ sub said {
         my $players = join ' ', @votableplayers;
         
         if ($#commands < 1) {
-            $self->sayc(__x("Syntax is {command} <playername>"));
+            $self->sayc(__x("Syntax is {command} <playername>",
+                            command => $commands[0]));
             
             $self->sayc(__x("Votable players are: {players}",
                             players => $players));
