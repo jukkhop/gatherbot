@@ -4203,11 +4203,8 @@ sub startpicking {
     my $list = $self->format_plist(@players);
     $self->sayc(__x("Player pool: {list}",
                     list => $list));
-                    
-    # Set channel to moderated and give +v to captains
-    #$self->mode("$chan +m");
-    #$self->mode("$chan +v $captain1");
-    #$self->mode("$chan +v $captain2");
+    
+    
     $self->sayc(__x("{next}'s turn to pick.",
                     next => $captain2));
     
