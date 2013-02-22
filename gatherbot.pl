@@ -4831,26 +4831,22 @@ sub check_q_msg {
         
         # If there's existing matching qauth info, return
         if ( exists($qauths{$ircnick}) && $qauths{$ircnick} eq $authname) {
-            # print STDERR "existing matching qauth info for nick $ircnick\n";
             return;
         }
         
         # If there's existing qauth info on this nick
         # but for a different authname, announce overwrite
         if ( exists($qauths{$ircnick}) && $qauths{$ircnick} ne $authname) {
-            # print STDERR "going to overwrite qauth info for nick $ircnick " .
-                            # "(oldauth=$qauths{$ircnick} newauth=$authname)\n";
+            print STDERR "going to overwrite qauth info for nick $ircnick " .
+                         "(oldauth=$qauths{$ircnick} newauth=$authname)\n";
         }
         
         # If there's existing info for this authname
         # but on a different irc-nick, update
         # the info and the user's name in data
         foreach (keys %qauths) {
-        
             if ($qauths{$_} eq $authname && $ircnick ne $_) {
-                
-                # print STDERR "deleting qauth info for nick $_ (auth=$qauths{$_})\n";
-                
+            
                 # Delete the existing qauth info
                 delete $qauths{$_};
                 
@@ -4878,6 +4874,21 @@ sub check_q_msg {
                     }
                 }
                 
+                # Check for the rare case that
+                # the user is now signed twice
+                my $count = 0;
+                for my $i (0 .. $#players) {
+                
+                    if ($players[$i] eq $ircnick) {
+                        $count += 1;
+                    }
+                    
+                    if ($count > 1) {
+                        splice @players, $i, 1;
+                        last;
+                    }
+                }
+                
                 # Change the name in %player_pks
                 foreach (keys %player_pks) {
                     if ($_ eq $oldnick) {
@@ -4895,23 +4906,6 @@ sub check_q_msg {
                     }
                 }
                 
-                # Change the name in %game_player_pks
-#                 foreach my $key (keys %game_player_pks) {
-#                     if (index($key, $oldnick) != -1) {
-#                         # Save the pk
-#                         my $pk = $game_player_pks{$key};
-#                         
-#                         # Delete old key from hash
-#                         delete $game_player_pks{$key};
-#                         
-#                         # Modify the key
-#                         $key =~ s/$oldnick/$ircnick/;
-#                         
-#                         # Save the new key & pk to hash
-#                         $game_player_pks{$key} = $pk;
-#                     }
-#                 }
-
                 $self->sayc(__x("{who} was identified as user {old} via " .
                                 "Q-auth; username changed to {who}",
                                 who => $ircnick, old => $_));
@@ -4922,7 +4916,6 @@ sub check_q_msg {
         
         # Add (or overwrite) the qauth info
         $qauths{$ircnick} = $authname;
-        # print STDERR "added qauth info for nick $ircnick (auth=$authname)\n";
     }
 
     return;
