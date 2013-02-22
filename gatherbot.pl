@@ -383,6 +383,7 @@ sub said {
     
         if ($captain1 eq '') {
             $captain1 = $tbcaptain;
+            
         } elsif ($captain2 eq '') {
             $captain2 = $tbcaptain;
         }
@@ -5623,11 +5624,10 @@ sub senddata {
     # Put data into one JSON
     my $json = '[' . join(', ', @jsons) . ']';
     
-    # Print jsons
-    print STDERR "JSONS: \n";
-    for my $str (@jsons) {
-        print STDERR "$str \n";
-    }
+    # print STDERR "JSONS: \n";
+    # for my $str (@jsons) {
+    #     print STDERR "$str \n";
+    # }
     
     my $req = HTTP::Request->new( 'POST', $websiteurl );
     $req->header( 'Content-Type' => 'application/json' );
