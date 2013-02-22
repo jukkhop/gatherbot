@@ -98,8 +98,8 @@ msgstr "Ei ole {who}:n vuoro poimia."
 msgid "{picker} picked {who}."
 msgstr "{picker} poimi {who}:n."
 
-msgid "{next}'s turn to pick."
-msgstr "{next}:n vuoro poimia."
+msgid " {next}'s turn to pick."
+msgstr " {next}:n vuoro poimia."
 
 msgid "Players: {list}"
 msgstr "Pelaajat: {list}"
@@ -141,7 +141,7 @@ msgid "Score {score} for game #{no} have requested: {requesters} [{requestersc}/
 msgstr "Tulosta {score} pelille #{no} on ehdottanut: {requesters} [{requestersc}/{neededreq}"
 
 msgid "Game #{no} has ended:"
-msgstr "Peli $cmd1 on päättynyt:"
+msgstr "Peli #{no} on päättynyt:"
 
 msgid "Result: "
 msgstr "Tulos: "
