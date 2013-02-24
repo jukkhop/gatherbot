@@ -1234,8 +1234,7 @@ sub said {
             $tbremoved = $commands[1];
         }
         
-        # Find out if and where the
-        # to-be-removed is on the playerlist
+        # Get the player's index in @players
         my $indexofplayer = -1;
         for my $i (0 .. $#players) {
             if ($players[$i] eq $tbremoved) {
@@ -1296,31 +1295,7 @@ sub said {
         
         # - GOING TO REMOVE A PLAYER -
         
-        # Remove the player
-        splice(@players, $indexofplayer, 1);
-        
-        # Remove player's votes and requests
-        $self->voidusersvotes($tbremoved);
-        $self->voidusersrequests($tbremoved);
-        
-        # Give output
-        my $playercount = $#players+1;
-        
-        $self->sayc(__x("{who} signed out. {pcount}/{pmax} have signed up.",
-                        who => $tbremoved,
-                        pcount => $playercount, pmax => $maxplayers));
-        
-        # If playerlist became empty
-        if ($playercount == 0) {
-        
-            # Clear all votes and requests
-            $self->voidvotes();
-            $self->voidrequests();
-            $canvotemap = 0;
-            $canvotecaptain = 0;
-        }
-        
-        $self->updatetopic();
+        my $self->outplayer($tbremoved);
         
         return;
     }
@@ -3370,6 +3345,82 @@ sub said {
     }
     
     
+}
+
+# This subr is called when
+# someone parts from the channel
+sub chanpart {
+    my $self = shift;
+    my $message = shift;
+    my $who = $message->{who};
+    my $channel = $message->{channel};
+    
+    # Check if the part happened in $chan
+    if ($channel ne $chan) {
+        return;
+    }
+    
+    # If the player is signed, remove him
+    $self->outplayer($who);
+    
+    return;
+}
+
+# This subr is called when
+# someone quits from irc
+sub userquit {
+    my $self = shift;
+    my $message = shift;
+    my $who = $message->{who};
+    
+    # If the player is signed, remove him
+    $self->outplayer($who);
+    
+    return;
+}
+
+# Removes the given player from the sign-up
+sub outplayer {
+    my $self = shift;
+    my $tbremoved = $_[0];
+    
+    # Get the player's index in @players
+    my $indexofplayer = -1;
+    for my $i (0 .. $#players) {
+        if ($players[$i] eq $tbremoved) {
+            $indexofplayer = $i;
+            last;
+        }
+    }
+    
+    if ($indexofplayer == -1) {
+        return;
+    }
+    
+    # Remove the player
+    splice(@players, $indexofplayer, 1);
+    
+    # Remove player's votes and requests
+    $self->voidusersvotes($tbremoved);
+    $self->voidusersrequests($tbremoved);
+    
+    # Give output
+    my $playercount = $#players+1;
+    $self->sayc(__x("{who} signed out. {pcount}/{pmax} have signed up.",
+                    who => $tbremoved,
+                    pcount => $playercount, pmax => $maxplayers));
+    
+    # If playerlist became empty
+    if ($playercount == 0) {
+    
+        # Clear all votes and requests
+        $self->voidvotes();
+        $self->voidrequests();
+        $canvotemap = 0;
+        $canvotecaptain = 0;
+    }
+    
+    $self->updatetopic();
 }
 
 
