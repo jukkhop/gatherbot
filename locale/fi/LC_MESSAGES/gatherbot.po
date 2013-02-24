@@ -140,8 +140,8 @@ msgstr "{who} ei pelannut pelissä #{no}."
 msgid "Score {score} for game #{no} have requested: {requesters} [{requestersc}/{neededreq}"
 msgstr "Tulosta {score} pelille #{no} on ehdottanut: {requesters} [{requestersc}/{neededreq}"
 
-msgid "Game #{no} has ended:"
-msgstr "Peli #{no} on päättynyt:"
+msgid "Game {no} has ended:"
+msgstr "Peli {no} on päättynyt:"
 
 msgid "Result: "
 msgstr "Tulos: "
