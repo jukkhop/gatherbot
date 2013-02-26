@@ -444,8 +444,8 @@ sub said {
             $captain2 = "";
         }
         
-        $self->sayc(__x("{who} is not a captain anymore."),
-                        who => $tbuncaptain);
+        $self->sayc(__x("{who} is not a captain anymore.",
+                        who => $tbuncaptain));
         
         $self->updatetopic();
         
@@ -3228,7 +3228,7 @@ sub said {
             $picker = $captain2;
         }
         
-        $self->sayc(__x("{next}'s turn to pick.",
+        $self->sayc(__x(" {next}'s turn to pick.",
                         next => $picker));
         
         return;
@@ -4256,7 +4256,7 @@ sub startpicking {
                     list => $list));
     
     
-    $self->sayc(__x("{next}'s turn to pick.",
+    $self->sayc(__x(" {next}'s turn to pick.",
                     next => $captain2));
     
     $canpick = 1;
