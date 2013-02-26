@@ -1295,7 +1295,7 @@ sub said {
         
         # - GOING TO REMOVE A PLAYER -
         
-        my $self->outplayer($tbremoved);
+        $self->outplayer($tbremoved);
         
         return;
     }
