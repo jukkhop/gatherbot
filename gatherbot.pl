@@ -3338,6 +3338,59 @@ sub said {
         return;
     }
     
+    # command .setmap
+    elsif ($commands[0] eq '.setmap') {
+    
+        if ($accesslevel ne 'admin') {
+            $self->sayc(__x("{who} is not an admin.",
+                            who => $who));
+            return;
+        }
+        
+        if ($#commands == 0) {
+            $self->sayc(__x("Syntax is {command} <mapname>",
+                            command => $commands[0]));
+            return;
+        }
+        
+        if ($#commands == 1) {
+            $chosenmap = $commands[1];
+            
+            $self->sayc(__x("The map is now set to {map}.",
+                            map => $commands[1]));
+            return;
+        }
+        
+        # - going to set the map of a given game -
+        
+        if (! exists $games{$commands[1]}) {
+            $self->sayc(__x("Game #{no} was not found.",
+                            no => $commands[1]));
+            return;
+        }
+        
+        # Get the game data
+        my @gamedata = split ',', $games{$commands[1]};
+        my @mapdata  = split ':', $gamedata[2];
+        
+        # Modify the game data
+        if ($#mapdata == 0) {
+            push @mapdata, $commands[2];
+        } else {
+            $mapdata[1] = $commands[2];
+        }
+        
+        # Update the game data
+        $gamedata[2] = join ':', @mapdata;
+        $games{$commands[1]} = join ',', @gamedata;
+        
+        # Give output
+        $self->sayc(__x("Changed the map of game #{no} to {map}.",
+                        no => $commands[1], map => $commands[2]));
+        
+        return;
+    }
+    
     
     # command .foo
     elsif ($commands[0] eq '.foo') {
@@ -5685,11 +5738,11 @@ sub senddata {
 }
 
 sub gethighest_pk {
-    my $attr = $_[0];
+    my $arg = $_[0];
 
     my $highest = 0;
     
-    if ($attr eq 'map') {
+    if ($arg eq 'map') {
         foreach (keys %map_pks) {
             if ($map_pks{$_} > $highest) {
                 $highest = $map_pks{$_};
@@ -5697,7 +5750,7 @@ sub gethighest_pk {
         }
     }
     
-    if ($attr eq 'player') {
+    if ($arg eq 'player') {
         foreach (keys %player_pks) {
             if ($player_pks{$_} > $highest) {
                 $highest = $player_pks{$_};
@@ -5705,7 +5758,7 @@ sub gethighest_pk {
         }
     }
     
-    if ($attr eq 'game_player') {
+    if ($arg eq 'game_player') {
         foreach (keys %game_player_pks) {
             if ($game_player_pks{$_} > $highest) {
                 $highest = $game_player_pks{$_};

@@ -614,9 +614,14 @@ msgstr "Meneillään olevat pelit:"
 msgid "Answer from web-server: {ans}"
 msgstr "Vastaus web-palvelimelta: {ans}"
 
+msgid "Syntax is {command} <map>"
+msgstr "Syntaksi on {command} <mappi>"
 
+msgid "The map is now set to {map}."
+msgstr "Mapiksi on nyt asetettu {map}."
 
-
+msgid "Changed the map of game #{no} to {map}."
+msgstr "Pelin numero #{no} mappi vaihdettu {map}:ksi."
 
 
 
