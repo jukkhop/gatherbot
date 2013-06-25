@@ -6,7 +6,7 @@ Contact irc: jukkan @ quakenet, mail: jukka.hopea@gmail.com
 <hr>
 
 <font face="Candara"><h3>What is it?</h3></font>
-<p>My attempt to make a configurable IRC-bot that manages pickups/gather matches. It's written in perl programming language and uses the Bot::BasicBot module as a base library. It's under active development as of February 2013.<p>
+<p>My attempt to make a configurable IRC-bot that manages pickups/gather matches. It's written in perl programming language and uses the Bot::BasicBot module as a base library.<p>
 
 <font face="Candara"><h3>Needed to run</h3></font>
 perl<br>
