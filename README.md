@@ -14,7 +14,7 @@ perl modules: Bot::BasicBot, DateTime (at least, to be complemented later)
 
 <p>If you're interested to run this bot on your channel and want advice/help, drop me a message (contact info is at the top).</p>
 
-font face="Candara"><h3>Currently implemented features</h3></font>
+<font face="Candara"><h3>Currently implemented features</h3></font>
 <p>
 .add            = Signs you up for the game.<br>
 .list           = Shows you list of signed up players.<br>
