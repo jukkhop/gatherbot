@@ -3414,7 +3414,7 @@ sub chanpart {
     }
 
     # If the player is signed, remove him
-    $self->outplayer($who);
+    # $self->outplayer($who);
 
     return;
 }
@@ -3427,7 +3427,7 @@ sub userquit {
     my $who = $message->{who};
 
     # If the player is signed, remove him
-    $self->outplayer($who);
+    # $self->outplayer($who);
 
     return;
 }
